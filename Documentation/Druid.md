@@ -1,1040 +1,1054 @@
 # Normal
 
-## Key Q
+## Key Q ✅
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Sunfire       ║
-║ 1 ║ Bear      ║ Mangle        ║
-║ 3 ║ Cat       ║ Mangle        ║
-║ 5 ║ Moonkin   ║ Sunfire       ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ Sunfire       ║──┐
+║ 1 ║ Bear        ║ Mangle        ║─┐│
+║ 3 ║ Cat         ║ Mangle        ║─┘│
+║ 5 ║ Moonkin     ║ Sunfire       ║──┘
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Rejuvenation  ║
-║ 1 ║ Bear      ║ Mangle        ║
-║ 3 ║ Cat       ║ Mangle        ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ Rejuvenation  ║
+║ 1 ║ Bear        ║ Mangle        ║─┐
+║ 3 ║ Cat         ║ Mangle        ║─┘
+╚═══╩═════════════╩═══════════════╝
 ```
 
 **Macro**:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Mangle; [spec:1,form:0/5] Sunfire;
+/cast [spec:1,stance:1/3] Mangle; [spec:1,stance:0/5] Sunfire;
 
-/cast [spec:2,noform] Rejuvenation; [spec:2,form:1] Maul; [spec:2,form:3] Mangle;
+/cast [spec:2,stance:0] Rejuvenation; [spec:2,stance:1/3] Mangle;
 ```
 
-## Key E
+## Key E ✅
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ Moonfire      ║─┐
+║ 1 ║ Bear        ║ Maul          ║ │
+║ 3 ║ Cat         ║ Rake          ║ │
+║ 5 ║ Moonkin     ║ Moonfire      ║─┘
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Regrowth      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║   ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ Regrowth      ║
+║ 1 ║ Bear        ║ Maul          ║
+║ 3 ║ Cat         ║ Rake          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] Maul; [spec:1,stance:3] Rake; [spec:1,stance:0/5] Moonfire;
 
-/cast [spec:2,noform] Regrowth; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] Regrowth; [spec:2,stance:1] Maul; [spec:2,stance:3] Rake;
 ```
 
-## Key R
+## Key R ✅
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Starsurge     ║
-║ 1 ║ Bear      ║ ....          ║
-║ 3 ║ Cat       ║ ....          ║
-║ 5 ║ Moonkin   ║ Starsurge     ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ Starsurge     ║─┐
+║ 1 ║ Bear        ║ ____          ║ │
+║ 3 ║ Cat         ║ ____          ║ │
+║ 5 ║ Moonkin     ║ Starsurge     ║─┘
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║               ║
-║ 1 ║ Bear      ║ ....          ║
-║ 3 ║ Cat       ║ ....          ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║   ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1]  ....; [spec:1,form:3] ....; [spec:1,form:0/5] ....;
+/cast [spec:1,stance:1]  ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] Starsurge;
 
-/cast [spec:2,noform] ....; [spec:2,form:1] ....; [spec:2,form:3] ....;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key F
+## Key F ✅
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ Rejuvenation  ║─┐
+║ 1 ║ Bear        ║ ____          ║ │
+║ 3 ║ Cat         ║ ____          ║ │
+║ 5 ║ Moonkin     ║ Rejuvenation  ║─┘
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ Swiftmend     ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] Rejuvenation;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] Swiftmend; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Tab
+## Key Tab ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Caps Lock
+## Key Caps Lock ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Mouse 1
+## Key Mouse 1 ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Mouse 4
+## Key Mouse 4 ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Mouse 3
+## Key Mouse 3 ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Mouse 6
+## Key Mouse 6 ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
 # Alt
 
-## Key Alt-Q
+## Key Alt-Q ✅
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Wrath         ║
-║ 1 ║ Bear      ║ Growl         ║
-║ 3 ║ Cat       ║ Swipe         ║
-║ 5 ║ Moonkin   ║ Wrath         ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ Wrath         ║─┐
+║ 1 ║ Bear        ║ Growl         ║ |
+║ 3 ║ Cat         ║ Swipe         ║ |
+║ 5 ║ Moonkin     ║ Wrath         ║─┘
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Nourish       ║
-║ 1 ║ Bear      ║ Growl         ║
-║ 3 ║ Cat       ║ Swipe         ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ Nourish       ║
+║ 1 ║ Bear        ║ Growl         ║
+║ 3 ║ Cat         ║ Swipe         ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] ....; [spec:1,form:3] ....; [spec:1,form:0/5] Wrath;
+/cast [spec:1,stance:1] Growl; [spec:1,stance:3] Swipe; [spec:1,stance:0/5] Wrath;
 
-/cast [spec:2,noform] Nourish; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] Nourish; [spec:2,stance:1] Growl; [spec:2,stance:3] Swipe;
 ```
 
-## Key Alt-E
+## Key Alt-E ✅
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦════════════════╗
-║ 1 ║ Form Name ║ Spell          ║
-╠═══╬═══════════╬════════════════╣
-║ 0 ║ Noform    ║ Starfire       ║
-║ 1 ║ Bear      ║ Swipe          ║
-║ 3 ║ Cat       ║ Ferocious Bite ║
-║ 5 ║ Moonkin   ║ Starfire       ║
-╚═══╩═══════════╩════════════════╝
+╔═══╦═════════════╦════════════════╗
+║ 1 ║ Stance Name ║ Spell          ║
+╠═══╬═════════════╬════════════════╣
+║ 0 ║ Default     ║ Starfire       ║
+║ 1 ║ Bear        ║ Swipe          ║
+║ 3 ║ Cat         ║ Ferocious Bite ║
+║ 5 ║ Moonkin     ║ Starfire       ║
+╚═══╩═════════════╩════════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦════════════════╗
-║ 2 ║ Form Name ║ Spell          ║
-╠═══╬═══════════╬════════════════╣
-║ 0 ║ Noform    ║ Healing Touch  ║
-║ 1 ║ Bear      ║ Swipe          ║
-║ 3 ║ Cat       ║ Ferocious Bite ║
-╚═══╩═══════════╩════════════════╝
+╔═══╦═════════════╦════════════════╗
+║ 2 ║ Stance Name ║ Spell          ║
+╠═══╬═════════════╬════════════════╣
+║ 0 ║ Default     ║ Healing Touch  ║
+║ 1 ║ Bear        ║ Swipe          ║
+║ 3 ║ Cat         ║ Ferocious Bite ║
+╚═══╩═════════════╩════════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] Swipe; [spec:1,stance:3] Ferocious Bite; [spec:1,stance:0/5] Starfire;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] Healing Touch; [spec:2,stance:1] Swipe; [spec:2,stance:3] Ferocious Bite;
 ```
 
-## Key Alt-R
+## Key Alt-R ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Alt-F
+## Key Alt-F ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Alt-Mouse Wheel Down
+## Key Alt-Mouse Wheel Down ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Alt-Mouse Wheel Up
+## Key Alt-Mouse Wheel Up ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Alt-Mouse 1
+## Key Alt-Mouse 1 ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Alt-Mouse 4
+## Key Alt-Mouse 4 ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Alt-Mouse 3
+## Key Alt-Mouse 3 ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Alt-Mouse 6
+## Key Alt-Mouse 6 ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
 
 
 # Shift
 
-## Key Shift-Q
+## Key Shift-Q ✅
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ Faerie Fire   ║─┐
+║ 1 ║ Bear        ║ ____          ║ |
+║ 3 ║ Cat         ║ ____          ║ |
+║ 5 ║ Moonkin     ║ Faerie Fire   ║─┘
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ Faerie Fire   ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] Faerie Fire;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] Faerie Fire; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Shifl-E
+## Key Shifl-E ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Shifl-R
+## Key Shifl-R ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Shifl-F
+## Key Shifl-F ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
 # Ctrl
 
-## Key Ctrl-Q
+## Key Ctrl-Q ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Ctrl-E
+## Key Ctrl-E ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Ctrl-R
+## Key Ctrl-R ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
 
-## Key Ctrl-F
+## Key Ctrl-F ⚠️
 
-### Table info:
+### Spell-stance table:
 
 - :crossed_swords:     Balance     *spec:1*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║ 1 ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Moonfire      ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 - :leaves:     Restoration     *spec:2*
 ```ts
-╔═══╦═══════════╦═══════════════╗
-║   ║ Form Name ║ Spell         ║
-╠═══╬═══════════╬═══════════════╣
-║ 0 ║ Noform    ║ Healing Touch ║
-║ 1 ║ Bear      ║ Maul          ║
-║ 3 ║ Cat       ║ Rake          ║
-║ 5 ║ Moonkin   ║ Moonfire      ║
-╚═══╩═══════════╩═══════════════╝
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
 ```
 
 Macro:
-```ruby
+```powershell
 #showtooltip
 
-/cast [spec:1,form:1] Maul; [spec:1,form:3] Rake; [spec:1,form:0/5] Moonfire;
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
 
-/cast [spec:2,noform] Healing Touch; [spec:2,form:1] Maul; [spec:2,form:3] Rake;
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
+```
+
+
+# DEFAULT EMPTY ⚠️
+
+### Spell-stance table:
+
+- :crossed_swords:     Balance     *spec:1*
+```ts
+╔═══╦═════════════╦═══════════════╗
+║ 1 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+║ 5 ║ Moonkin     ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
+```
+
+- :leaves:     Restoration     *spec:2*
+```ts
+╔═══╦═════════════╦═══════════════╗
+║ 2 ║ Stance Name ║ Spell         ║
+╠═══╬═════════════╬═══════════════╣
+║ 0 ║ Default     ║ ____          ║
+║ 1 ║ Bear        ║ ____          ║
+║ 3 ║ Cat         ║ ____          ║
+╚═══╩═════════════╩═══════════════╝
+```
+
+Macro:
+```powershell
+#showtooltip
+
+/cast [spec:1,stance:1] ____; [spec:1,stance:3] ____; [spec:1,stance:0/5] ____;
+
+/cast [spec:2,stance:0] ____; [spec:2,stance:1] ____; [spec:2,stance:3] ____;
 ```
